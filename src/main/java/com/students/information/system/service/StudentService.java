@@ -13,7 +13,8 @@ public interface StudentService {
 
     List<Student> findAllByOrderByGpa();
 
-    void saveOrUpdateStudent(Student student);
+    Student saveOrUpdateStudent(Student student);
 
     void deleteStudent(String id);
+    void deleteStudentById(String id);
 }
