@@ -1,0 +1,4 @@
+FROM openjdk:8
+ADD target/studentinformationsystem.jar studentinformationsystem.jar
+EXPOSE 8081
+ENTRYPOINT ["java", "-jar", "studentinformationsystem.jar"]
